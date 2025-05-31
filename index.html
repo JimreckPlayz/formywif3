@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jim & Valerie</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="https://emoji.gg/assets/emoji/heart_blue.png" />
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="blue.mp3" type="audio/mpeg">
+    </audio>
+    <canvas id="stars"></canvas>
+    <div class="heart"></div>
+    <div class="container">
+        <h1>Dear Valerie,</h1>
+        <p id="letter"></p>
+    </div>
+   
+<div class="gallery">
+    <h2>Our Memories 💙</h2>
+    <div class="gallery-container">
+        <img src="1.png" alt="Memory 1" onclick="openModal(this)" />
+        <img src="2.png" alt="Memory 2" onclick="openModal(this)" />
+        <img src="3.png" alt="Memory 3" onclick="openModal(this)" />
+        <img src="4.png" alt="Memory 4" onclick="openModal(this)" />
+        <img src="5.png" alt="Memory 5" onclick="openModal(this)" />
+    </div>
+</div>
+<div id="lightboxModal" class="lightbox" onclick="closeModal()">
+    <img id="lightboxImg" src="" alt="Enlarged image" />
+</div>
+
+<div class="secret" id="secretPage">
+        <p>Welcome to our secret place, Valerie 💙</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
