@@ -1,0 +1,141 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: radial-gradient(circle, #001f3f, #001a33);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #001f3f; /* Fallback solid blue */
+    background-image: url('background1.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #add8e6;
+    overflow-x: hidden;
+}
+
+}
+
+@keyframes fadeInScale {
+    from {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    margin-top: 80px;
+    font-size: 24px;
+}
+
+.heart {
+    cursor: url('https://cur.cursors-4u.net/others/oth-2/oth178.cur'), auto;
+}
+
+.love-check {
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#noBtn {
+    position: absolute;
+}
+
+.secret {
+    display: none;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #add8e6;
+}
+
+.gallery {
+    margin-top: 40px;
+}
+
+.gallery h2 {
+    color: #87CEFA;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 3px solid #87CEEB;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #87CEFA;
+}
+
+@media (max-width: 600px) {
+    .gallery-container img {
+        width: 45vw;
+        height: auto;
+    }
+}
